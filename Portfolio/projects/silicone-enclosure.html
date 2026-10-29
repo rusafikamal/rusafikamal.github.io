@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Custom Silicone Sensor Enclosure</title>
+<meta name="description" content="A radar-style display of aircraft data, driven by an ESP32.">
+<meta name="theme-color" content="#0a1a3a">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+    <g class="flow" id="flowg">
+      <path d="M-50 150C300 150 480 120 600 120S900 150 1250 150"/>
+      <path d="M-50 230C300 230 470 195 600 195S910 230 1250 230"/>
+      <path d="M-50 310C300 310 460 275 600 275S920 310 1250 310"/>
+      <path d="M-50 370C300 370 470 345 600 345S900 370 1250 370"/>
+      <path d="M-50 450C300 450 470 478 600 478S900 450 1250 450"/>
+      <path d="M-50 520C300 520 460 560 600 560S920 520 1250 520"/>
+      <path d="M-50 610C300 610 470 650 600 650S910 610 1250 610"/>
+      <path d="M-50 700C300 700 480 725 600 725S900 700 1250 700"/>
+    </g>
+    <path class="wing" id="wingp" d="M440 410C500 372 640 366 780 398C650 430 520 436 440 410Z"/>
+  </svg>
+</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="lg" filterUnits="userSpaceOnUse" x="0" y="0" width="100" height="40" color-interpolation-filters="sRGB">
+    <feImage id="lgmap" x="0" y="0" width="100" height="40" preserveAspectRatio="none" result="m"/>
+    <feDisplacementMap in="SourceGraphic" in2="m" scale="26" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<div class="navwrap">
+  <div class="navbg glass" aria-hidden="true"></div>
+  <nav aria-label="Main">
+    <span class="lens" aria-hidden="true"></span>
+    <a class="me" href="../index.html#top">Rusafi</a>
+    <a href="../index.html#projects" data-current>Projects</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</div>
+
+<main id="top">
+  <a class="back" href="../index.html#projects">All projects</a>
+
+  <section class="phero">
+    <div class="hero-card glass">
+      <h1 class="ptitle">Custom Silicone Sensor Enclosure</h1>
+      <p>A client-based project focused on developing a custom silicone enclosure for a sensor used to collect human body movement data. The project involved translating the client's requirements into a manufacturable design through CAD modelling, 3D printing, and silicone casting.
+      <div class="stats"><span class="chip">Silicone Casting</span><span class="chip">CAD</span><span class="chip">3D Printing</span></div>
+      <dl class="facts"><div><dt>Context</dt><dd>Makerspace | Client Project</dd></div><div><dt>Tools</dt><dd>SolidWorks, 3D Printing, Silicone Casting</dd></div></dl>
+    </div>
+    <!-- Cover photo: put it at images/adsb-display/cover.jpg. It disappears if the file is missing. -->
+    <img class="cover" src="../images/adsb-display/cover.jpg" alt="ADS-B radar display" onerror="this.remove()">
+  </section>
+
+  <section class="block">
+    <h2>The problem</h2>
+    <div class="panel glass prose"><p>The client required a custom silicone enclosure to house a sensor used for collecting human body movement data. The enclosure needed to accommodate the sensor's geometry while providing a suitable form factor for its intended application.</p></div>
+  </section>
+
+  <section class="block">
+    <h2>What I did</h2>
+    <div class="panel glass prose"><ul>
+      <li>Collaborated directly with the client to understand the sensor's dimensions, intended application, and enclosure requirements.</li>
+      <li>Developed a custom mold design in CAD to produce the silicone enclosure.</li>
+      <li>Prepared and 3D printed the mold for fabrication.</li>
+      <li>Carried out the silicone casting process to manufacture the enclosure.</li>
+      <li>Worked through the design and fabrication process to translate the client's requirements into a physical prototype.</li>
+    </ul></div>
+  </section>
+
+  <section class="block">
+    <h2>Results</h2>
+    <div class="panel glass prose"><ul>
+      <li>Developed and fabricated a custom silicone sensor enclosure through an integrated design and manufacturing process. The project provided practical experience in client communication, mold design, additive manufacturing, and silicone casting, while demonstrating how digital designs can be translated into functional physical components.</li>
+    </ul></div>
+  </section>
+
+  <!-- Gallery: add photos as images/adsb-display/photo-1.jpg to photo-6.jpg. Missing ones are skipped, and the section hides if there are none. -->
+  <section class="block" id="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <button class="shot" type="button"><img src="../images/adsb-display/photo-1.jpg" alt="ADS-B radar display, photo 1" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/adsb-display/photo-2.jpg" alt="ADS-B radar display, photo 2" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/adsb-display/photo-3.jpg" alt="ADS-B radar display, photo 3" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/adsb-display/photo-4.jpg" alt="ADS-B radar display, photo 4" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/adsb-display/photo-5.jpg" alt="ADS-B radar display, photo 5" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/adsb-display/photo-6.jpg" alt="ADS-B radar display, photo 6" loading="lazy" onerror="this.parentNode.remove()"></button>
+      
+    </div>
+  </section>
+
+  <!-- Reports: upload the PDF to the reports folder, change the file name below, then delete the word hidden from the next line. -->
+  <section class="block" id="reports" hidden>
+    <h2>Report</h2>
+    <div class="panel glass prose">
+      <p>Read the full write-up.</p>
+      <div class="actions"><a class="btn main" href="../reports/adsb-display-report.pdf" download>Download report (PDF)</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="y"></span> Rusafi · University of Ottawa</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rusafi – Mechanical engineering portfolio</title>
+<meta name="description" content="Mechanical engineering co-op student at the University of Ottawa. Aerodynamics, additive manufacturing, and embedded builds.">
+<meta name="theme-color" content="#0a1a3a">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg" aria-hidden="true">
+  <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+    <g class="flow" id="flowg">
+      <path d="M-50 150C300 150 480 120 600 120S900 150 1250 150"/>
+      <path d="M-50 230C300 230 470 195 600 195S910 230 1250 230"/>
+      <path d="M-50 310C300 310 460 275 600 275S920 310 1250 310"/>
+      <path d="M-50 370C300 370 470 345 600 345S900 370 1250 370"/>
+      <path d="M-50 450C300 450 470 478 600 478S900 450 1250 450"/>
+      <path d="M-50 520C300 520 460 560 600 560S920 520 1250 520"/>
+      <path d="M-50 610C300 610 470 650 600 650S910 610 1250 610"/>
+      <path d="M-50 700C300 700 480 725 600 725S900 700 1250 700"/>
+    </g>
+    <path class="wing" id="wingp" d="M440 410C500 372 640 366 780 398C650 430 520 436 440 410Z"/>
+  </svg>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="lg" filterUnits="userSpaceOnUse" x="0" y="0" width="100" height="40" color-interpolation-filters="sRGB">
+    <feImage id="lgmap" x="0" y="0" width="100" height="40" preserveAspectRatio="none" result="m"/>
+    <feDisplacementMap in="SourceGraphic" in2="m" scale="26" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+
+<div class="navwrap">
+  <div class="navbg glass" aria-hidden="true"></div>
+  <nav aria-label="Main">
+    <span class="lens" aria-hidden="true"></span>
+    <a class="me" href="#top">Rusafi</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-card glass">
+      <h1>Hi! I’m Rusafi</h1>
+      <p>a Mechanical Engineering student at the University of Ottawa with a strong interest in mechanical design, manufacturing, and hands-on prototyping. I enjoy building systems that combine mechanical and electrical components, with experience in CAD, fabrication, and iterative design through projects in automation and assistive technology.
+        My recent work includes developing an automated sorting system and designing a carbon fiber layup mechanism, as well as a computer vision-based smart glasses prototype to support individuals with visual impairments.</p>
+      <div class="actions">
+        <a class="btn main" href="#projects">See my projects</a>
+        <a class="btn alt" href="#contact">Get in touch</a>
+      </div>
+      <div class="stats">
+        <span class="chip">BASc Mechanical Engineering (Co-op)</span>
+        <span class="chip">Graduating 2029</span>
+        <span class="chip">Formula SAE aerodynamics</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+  <h2>Experience</h2>
+
+  <div class="panel glass prose role">
+    <div class="role-head">
+      <h3>Makerspace supervisor and trainer</h3>
+      <span class="dates">Sep 2025 to Present</span>
+    </div>
+    <span class="meta">uOttawa Faculty of Engineering</span>
+    <ul>
+      <li>Trained and supported 1,200+ students in CAD, prototyping, and fabrication, including 80+ workshops on manufacturing methods</li>
+      <li>Repaired 10+ machines, including 3D printers, laser cutters, and milling machines</li>
+      <li>Supported 80+ mechanical and mechatronic projects and advised 100+ teams on DFM, material selection, and fabrication</li>
+    </ul>
+    <div class="chips"><span class="chip">Supervision</span><span class="chip">Maintenance</span><span class="chip">Documentation</span><span class="chip">Training</span></div>
+  </div>
+
+  <div class="panel glass prose role">
+    <div class="role-head">
+      <h3>Bambu Lab uOttawa campus ambassador</h3>
+      <span class="dates">May 2026 to Present</span>
+    </div>
+    <span class="meta">Bambu Lab</span>
+    <ul>
+      <li>Host events on campus and train people to use Bambu Lab 3D printers</li>
+      <li>Handle outreach and light marketing for Bambu Lab at uOttawa</li>
+      <li>Act as the link between Bambu Lab and the campus community, keeping communication and relationships going</li>
+    </ul>
+    <div class="chips"><span class="chip">3D printing</span><span class="chip">Communication</span><span class="chip">Training</span><span class="chip">Outreach</span></div>
+  </div>
+</section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <a class="card glass wide" href="projects/fsae-aero.html">
+        <img src="images/fsae-aero/cover.jpg" alt="Formula SAE aerodynamics" loading="lazy" onerror="this.remove()">
+        <h3>uOttawa Formula SAE Aerodynamics Team-member</h3>
+        <span class="meta">May 2026 - Present</span>
+        <p>Using data logger telemetry to find out why the car’s front wing and splitter kept touching the ground, then fixing it with a ride height change.</p>
+        <div class="tags"><span class="chip">Telemetry</span><span class="chip">Aerodynamics</span><span class="chip">Formula SAE</span></div>
+        <span class="more">View project</span>
+      </a>
+
+      <a class="card glass" href="projects/gooseneck-optimization.html">
+        <img src="images/gooseneck-optimization/cover.jpg" alt="Gooseneck topology optimization" loading="lazy" onerror="this.remove()">
+        <h3>Gooseneck topology optimization</h3>
+        <span class="meta">uOttawa Formula SAE</span>
+        <p>Using SolidWorks topology optimization to take weight out of a gooseneck part without losing the strength it needs.</p>
+        <div class="tags"><span class="chip">Topology optimization</span><span class="chip">FEA</span><span class="chip">SolidWorks</span></div>
+        <span class="more">View project</span>
+      </a>
+
+      <a class="card glass" href="projects/silicone-enclosure.html">
+        <img src="images/adsb-display/cover.jpg" alt="ADS-B radar display" loading="lazy" onerror="this.remove()">
+        <h3>Custom Silicone Sensor Enclosure</h3>
+        <span class="meta">Makerspace | Client Project</span>
+        <p>Designed and fabricated a custom mold for casting a silicone enclosure to house a wearable sensor used for collecting human body movement data.</p>
+        <div class="tags"><span class="chip">Silicone Casting</span><span class="chip">CAD</span><span class="chip">3D Printing</span></div>
+        <span class="more">View project</span>
+      </a>
+
+      <a class="card glass" href="projects/morph.html">
+        <img src="images/transit-tracker/cover.jpg" alt="ESP32 transit tracker" loading="lazy" onerror="this.remove()">
+        <h3>MORPH — An ESP32-Powered, Hackable Handheld Platform</h3>
+        <span class="meta">Jul 2026 - Oct 2026</span>
+        <p>A customizable ESP32-powered handheld for embedded experimentation and running custom applications.</p>
+        <div class="tags"><span class="chip">ESP32</span><span class="chip">Embedded</span><span class="chip">Hardware</span></div>
+        <span class="more">View project</span>
+      </a>
+
+      <a class="card glass" href="projects/morph.html">
+        <img src="images/transit-tracker/cover.jpg" alt="ESP32 transit tracker" loading="lazy" onerror="this.remove()">
+        <h3>MORPH — An ESP32-Powered, Hackable Handheld Platform</h3>
+        <span class="meta">Jul 2026 - Oct 2026</span>
+        <p>A customizable ESP32-powered handheld for embedded experimentation and running custom applications.</p>
+        <div class="tags"><span class="chip">ESP32</span><span class="chip">Embedded</span><span class="chip">Hardware</span></div>
+        <span class="more">View project</span>
+      </a>
+
+      <a class="card glass" href="projects/cf-layup.html">
+        <img src="images/robot-arm/cover.jpg" alt="3DOF robot arm" loading="lazy" onerror="this.remove()">
+        <h3>3D Topology Optimization Manufacturing: Automated CF Layup System</h3>
+        <span class="meta">Jan 2026 - May 2026</span>
+        <p>Passive Mechanical Feedback & Drivetrain Control</p>
+        <div class="tags"><span class="chip">CAD</span><span class="chip">Mechanical Design</span><span class="chip">Mechanical Analysis</span></div>
+        <span class="more">View project</span>
+      </a>
+
+      <a class="card glass" href="projects/robot-arm.html">
+        <img src="images/robot-arm/cover.jpg" alt="3DOF robot arm" loading="lazy" onerror="this.remove()">
+        <h3>3DOF robot arm</h3>
+        <span class="meta">Jan 2026 - Present</span>
+        <p>A three-axis robot arm built around an ESP32 and controlled wirelessly over Bluetooth.</p>
+        <div class="tags"><span class="chip">ESP32</span><span class="chip">Robotics</span><span class="chip">Embedded</span></div>
+        <span class="more">View project</span>
+      </a>
+
+      <a class="card glass" href="projects/omega.html">
+        <img src="images/robot-arm/cover.jpg" alt="3DOF robot arm" loading="lazy" onerror="this.remove()">
+        <h3>Omega Glasses — AI-Powered Assistive Vision System</h3>
+        <span class="meta">Sep 2024 - Dec 2024</span>
+        <p>A computer vision-based assistive technology for visually impaired individuals.</p>
+        <div class="tags"><span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">YOLOv5</span><span class="chip">Visual Studio</span><span class="chip">Speech Recognition</span></div>
+        <span class="more">View project</span>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="panel glass">
+      <div class="group">
+        <div class="meta">CAD</div>
+        <div class="chips"><span class="chip">SolidWorks</span><span class="chip">Fusion 360</span><span class="chip">AutoCAD</span><span class="chip">Onshape</span><span class="chip">CATIA V5</span></div>
+      </div>
+      <div class="group">
+        <div class="meta">Engineering practice</div>
+        <div class="chips"><span class="chip">GD&amp;T</span><span class="chip">DFM</span><span class="chip">FEA</span><span class="chip">Telemetry analysis</span></div>
+      </div>
+      <div class="group">
+        <div class="meta">Manufacturing</div>
+        <div class="chips"><span class="chip">3D printing</span><span class="chip">CNC machining</span><span class="chip">Laser cutting</span></div>
+      </div>
+      <div class="group">
+        <div class="meta">Programming and embedded</div>
+        <div class="chips"><span class="chip">Python</span><span class="chip">MATLAB</span><span class="chip">Arduino</span><span class="chip">ESP32</span><span class="chip">Raspberry Pi</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="split">
+      <div class="panel glass">
+        <h3>Background</h3>
+        <p>I study mechanical engineering at the University of Ottawa and learn best by building. On campus I supervise and train others in the Faculty of Engineering Makerspace, and I'm the Bambu Lab Campus Ambassador there.</p>
+        <div class="actions">
+  <a class="btn main" href="resume/rusafi-resume.pdf" download>Download resume (PDF)</a>
+</div>
+      </div>
+      <div class="panel glass">
+        <h3>Right now</h3>
+        <p>Working on aerodynamics with the Formula SAE team and looking for co-op roles in design, testing, or manufacturing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact glass">
+      <h2>Let's work together</h2>
+      <p>I'm open to co-op placements and engineering project collaborations.</p>
+      <div class="actions">
+        <!-- Replace the three links below -->
+        <a class="btn main" href="mailto:rkama064@uottawa.ca">Email me</a>
+        <a class="btn main" href="https://www.linkedin.com/in/rusafi-kamal" target="_blank">LinkedIn</a>
+        <a class="btn main" href="https://github.com/silentium-noctis" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>© <span id="y"></span> Rusafi · University of Ottawa</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

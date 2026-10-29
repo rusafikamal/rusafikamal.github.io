@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>3DOF robot arm – Rusafi</title>
+<meta name="description" content="A three-axis robot arm built around an ESP32 and controlled wirelessly over Bluetooth.">
+<meta name="theme-color" content="#0a1a3a">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="bg" aria-hidden="true">
+  <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+    <g class="flow" id="flowg">
+      <path d="M-50 150C300 150 480 120 600 120S900 150 1250 150"/>
+      <path d="M-50 230C300 230 470 195 600 195S910 230 1250 230"/>
+      <path d="M-50 310C300 310 460 275 600 275S920 310 1250 310"/>
+      <path d="M-50 370C300 370 470 345 600 345S900 370 1250 370"/>
+      <path d="M-50 450C300 450 470 478 600 478S900 450 1250 450"/>
+      <path d="M-50 520C300 520 460 560 600 560S920 520 1250 520"/>
+      <path d="M-50 610C300 610 470 650 600 650S910 610 1250 610"/>
+      <path d="M-50 700C300 700 480 725 600 725S900 700 1250 700"/>
+    </g>
+    <path class="wing" id="wingp" d="M440 410C500 372 640 366 780 398C650 430 520 436 440 410Z"/>
+  </svg>
+</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="lg" filterUnits="userSpaceOnUse" x="0" y="0" width="100" height="40" color-interpolation-filters="sRGB">
+    <feImage id="lgmap" x="0" y="0" width="100" height="40" preserveAspectRatio="none" result="m"/>
+    <feDisplacementMap in="SourceGraphic" in2="m" scale="26" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<div class="navwrap">
+  <div class="navbg glass" aria-hidden="true"></div>
+  <nav aria-label="Main">
+    <span class="lens" aria-hidden="true"></span>
+    <a class="me" href="../index.html#top">Rusafi</a>
+    <a href="../index.html#projects" data-current>Projects</a>
+    <a href="../index.html#skills">Skills</a>
+    <a href="../index.html#about">About</a>
+    <a href="../index.html#contact">Contact</a>
+  </nav>
+</div>
+
+<main id="top">
+  <a class="back" href="../index.html#projects">All projects</a>
+
+  <section class="phero">
+    <div class="hero-card glass">
+      <h1 class="ptitle">3DOF robot arm</h1>
+      <p>A three-axis robot arm built around an ESP32 and controlled wirelessly over Bluetooth.</p>
+      <div class="stats"><span class="chip">ESP32</span><span class="chip">Robotics</span><span class="chip">Embedded</span></div>
+      <dl class="facts"><div><dt>Context</dt><dd>Personal project</dd></div><div><dt>Tools</dt><dd>ESP32, MG90S servos, Dabble, perfboard</dd></div></dl>
+    </div>
+    <!-- Cover photo: put it at images/robot-arm/cover.jpg. It disappears if the file is missing. -->
+    <img class="cover" src="../images/robot-arm/cover.jpg" alt="3DOF robot arm" onerror="this.remove()">
+  </section>
+
+  <section class="block">
+    <h2>The problem</h2>
+    <div class="panel glass prose"><p>A small three-axis arm that moves reliably on battery power and can be driven wirelessly.</p></div>
+  </section>
+
+  <section class="block">
+    <h2>What I did</h2>
+    <div class="panel glass prose"><ul>
+      <li>Chose and wired MG90S servos for the three joints</li>
+      <li>Designed the power system: a LiPo battery with a boost converter</li>
+      <li>Laid out the electronics on perfboard</li>
+      <li>Wrote firmware with Dabble Bluetooth control and a passive buzzer for audio feedback</li>
+      <li>Built and refined it iteratively through hands-on testing in a makerspace</li>
+    </ul></div>
+  </section>
+
+  <section class="block">
+    <h2>Results</h2>
+    <div class="panel glass prose"><ul>
+      <li>A complete electronics and firmware package: servo drive, battery power, Bluetooth control, and buzzer feedback.</li>
+    </ul></div>
+  </section>
+
+  <!-- Gallery: add photos as images/robot-arm/photo-1.jpg to photo-6.jpg. Missing ones are skipped, and the section hides if there are none. -->
+  <section class="block" id="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <button class="shot" type="button"><img src="../images/robot-arm/photo-1.jpg" alt="3DOF robot arm, photo 1" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/robot-arm/photo-2.jpg" alt="3DOF robot arm, photo 2" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/robot-arm/photo-3.jpg" alt="3DOF robot arm, photo 3" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/robot-arm/photo-4.jpg" alt="3DOF robot arm, photo 4" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/robot-arm/photo-5.jpg" alt="3DOF robot arm, photo 5" loading="lazy" onerror="this.parentNode.remove()"></button>
+      <button class="shot" type="button"><img src="../images/robot-arm/photo-6.jpg" alt="3DOF robot arm, photo 6" loading="lazy" onerror="this.parentNode.remove()"></button>
+      
+    </div>
+  </section>
+
+  <!-- Reports: upload the PDF to the reports folder, change the file name below, then delete the word hidden from the next line. -->
+  <section class="block" id="reports" hidden>
+    <h2>Report</h2>
+    <div class="panel glass prose">
+      <p>Read the full write-up.</p>
+      <div class="actions"><a class="btn main" href="../reports/robot-arm-report.pdf" download>Download report (PDF)</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="y"></span> Rusafi · University of Ottawa</footer>
+<script src="../site.js" defer></script>
+</body>
+</html>
