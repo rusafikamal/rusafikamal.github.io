@@ -165,3 +165,19 @@ a.card{color:inherit}
 .role .meta{display:block;font-size:.9rem;color:var(--ink-3);margin:4px 0 16px}
 .role .chips{margin-top:18px}
 .role+.role{margin-top:20px}
+
+/* Mobile navigation optimization */
+@media (hover: none) and (pointer: coarse) {
+  .lens {
+    transition: left 0.3s ease-out, width 0.3s ease-out;
+  }
+
+  .lens.squish {
+    animation: none;
+  }
+
+  nav {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+}

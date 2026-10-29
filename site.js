@@ -35,7 +35,11 @@ document.querySelectorAll('.glass').forEach(function(el){
     lens.style.left=a.offsetLeft+'px';
     lens.style.width=a.offsetWidth+'px';
     size(a.offsetWidth,lens.offsetHeight||40);
-    if(!instant){lens.classList.remove('squish');void lens.offsetWidth;lens.classList.add('squish')}
+    if (!instant && matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      lens.classList.remove('squish');
+      void lens.offsetWidth;
+      lens.classList.add('squish');
+    }
     at=a;
   }
   function init(){
